@@ -93,13 +93,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll cue */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/30">
-        <span className="font-mono text-[10px] uppercase tracking-widest">Scroll</span>
-        <div className="w-px h-8 bg-white/20 relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-1/2 bg-white/60 animate-[scrollDot_1.6s_ease_infinite]" />
-        </div>
-      </div>
     </section>
   )
 }
