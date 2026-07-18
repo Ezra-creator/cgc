@@ -23,10 +23,10 @@ export default function Footer() {
   return (
     <footer className="bg-cgc-ink text-white">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-10">
 
           {/* Brand */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <div className="mb-4">
               <Image
                 src="/images/logo.jpg"
@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
 
           {/* Find us */}
-          <div>
+          <div className="col-span-2 sm:col-span-1 lg:col-span-1">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-3 md:mb-4">Find us</h4>
             <ul className="space-y-2 md:space-y-2.5">
               <li className="text-xs md:text-sm text-white/60 leading-relaxed">
