@@ -16,8 +16,8 @@ export default function HomePage() {
   return (
     <SiteLayout>
       <Hero />
-      <Categories />
       <NewArrivals />
+      <Categories />
       <BrandStory />
       <Testimonials />
       <Newsletter />
