@@ -5,18 +5,20 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-cgc-ink">
       {/* Background image with Ken Burns */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden bg-black">
         <div
-          className="absolute inset-0 ken-burns"
+          className="absolute inset-0 ken-burns opacity-60"
           style={{
-            backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%)',
+            backgroundImage: 'radial-gradient(circle at center, #2a0808 0%, #000000 100%)',
           }}
         />
-        {/* Red accent glow */}
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-cgc-red/5 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full bg-cgc-red/3 blur-2xl pointer-events-none" />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cgc-ink/90 via-cgc-ink/60 to-cgc-ink/30" />
+        {/* Attractive Glowing Gradient Orbs */}
+        <div className="absolute top-[-20%] right-[-10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full bg-cgc-red/30 blur-[100px] pointer-events-none mix-blend-screen" />
+        <div className="absolute bottom-[-20%] left-[-10%] w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] rounded-full bg-rose-900/30 blur-[120px] pointer-events-none mix-blend-screen" />
+        <div className="absolute top-[20%] left-[20%] w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-orange-600/10 blur-[100px] pointer-events-none mix-blend-screen" />
+        
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
       </div>
 
       {/* Content */}
