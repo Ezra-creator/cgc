@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 
 const STATS = [
@@ -21,11 +22,14 @@ export default function BrandStory() {
           {/* Image */}
           <div ref={refLeft} className="reveal order-2 lg:order-1">
             <div className="relative">
-              <div className="aspect-[4/5] bg-gradient-to-br from-cgc-ink to-[#2a2a2a] rounded-card overflow-hidden flex items-center justify-center">
-                <div className="text-center px-8">
-                  <p className="font-mono text-xs text-white/30 uppercase tracking-widest mb-4">Lifestyle photography</p>
-                  <p className="text-white/20 text-sm leading-relaxed">Upload the owner's lifestyle photo here in the admin dashboard</p>
-                </div>
+              <div className="aspect-[4/5] bg-cgc-ink rounded-card overflow-hidden relative">
+                <Image 
+                  src="/images/IMG-20260531-WA0017.jpg"
+                  alt="Cary Grant Clothing Owner"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
               {/* Accent card */}
               <div className="absolute -bottom-4 -right-4 bg-cgc-red text-white p-4 rounded-card">
