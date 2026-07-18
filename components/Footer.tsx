@@ -22,8 +22,8 @@ const HELP_LINKS = [
 export default function Footer() {
   return (
     <footer className="bg-cgc-ink text-white">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
 
           {/* Brand */}
           <div>
@@ -36,7 +36,7 @@ export default function Footer() {
                 className="object-contain brightness-0 invert opacity-90"
               />
             </div>
-            <p className="text-sm text-white/60 leading-relaxed mb-5">
+            <p className="text-xs md:text-sm text-white/60 leading-relaxed mb-4 md:mb-5">
               Premium Canadian streetwear for the whole family. Est. 2002, Barrie, Ontario.
             </p>
             <div className="flex gap-3">
@@ -70,12 +70,12 @@ export default function Footer() {
 
           {/* Shop */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">Shop</h4>
-            <ul className="space-y-2.5">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-3 md:mb-4">Shop</h4>
+            <ul className="space-y-2 md:space-y-2.5">
               {SHOP_LINKS.map(link => (
                 <li key={link.label}>
                   <Link href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors">
+                    className="text-xs md:text-sm text-white/60 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -85,12 +85,12 @@ export default function Footer() {
 
           {/* Help */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">Help</h4>
-            <ul className="space-y-2.5">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-3 md:mb-4">Help</h4>
+            <ul className="space-y-2 md:space-y-2.5">
               {HELP_LINKS.map(link => (
                 <li key={link.label}>
                   <Link href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors">
+                    className="text-xs md:text-sm text-white/60 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -100,26 +100,26 @@ export default function Footer() {
 
           {/* Find us */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">Find us</h4>
-            <ul className="space-y-2.5">
-              <li className="text-sm text-white/60 leading-relaxed">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-3 md:mb-4">Find us</h4>
+            <ul className="space-y-2 md:space-y-2.5">
+              <li className="text-xs md:text-sm text-white/60 leading-relaxed">
                 54 Dunlop Street West,<br />
                 Main Floor,<br />
                 Barrie, Ontario
               </li>
               <li>
                 <a href="tel:+17057171073"
-                  className="text-sm text-white/60 hover:text-white transition-colors">
+                  className="text-xs md:text-sm text-white/60 hover:text-white transition-colors">
                   +1 705-717-1073
                 </a>
               </li>
               <li>
                 <a href="mailto:cary@carygrantclothing.com"
-                  className="text-sm text-white/60 hover:text-white transition-colors">
+                  className="text-xs md:text-sm text-white/60 hover:text-white transition-colors">
                   cary@carygrantclothing.com
                 </a>
               </li>
-              <li className="text-sm text-white/60">
+              <li className="text-xs md:text-sm text-white/60">
                 Mon–Sat: 10am – 7pm<br />
                 Sun: 11am – 5pm
               </li>

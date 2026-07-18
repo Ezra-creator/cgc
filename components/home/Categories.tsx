@@ -8,7 +8,7 @@ const CATEGORIES = [
     sub: 'Hoodies · Tracksuits · Tees',
     href: '/shop?category=mens',
     gradient: 'from-[#1a1a2a] to-[#2a1f35]',
-    span: 'lg:row-span-2',
+    span: 'col-span-2 sm:col-span-1 lg:col-span-1 lg:row-span-2',
     height: 'min-h-[340px]',
   },
   {
@@ -60,7 +60,7 @@ export default function Categories() {
         </div>
 
         {/* Bento grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:grid-rows-2">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:grid-rows-2">
           {CATEGORIES.map((cat, i) => (
             <Link
               key={cat.label}

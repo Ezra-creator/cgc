@@ -73,8 +73,8 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md border-b border-cgc-hairline shadow-sm' : 'bg-transparent'
+      <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-white ${
+        scrolled ? 'border-b border-cgc-hairline shadow-sm' : ''
       }`}>
         <nav className="max-w-7xl mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
@@ -95,9 +95,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`text-sm font-medium transition-colors relative group ${
-                  scrolled ? 'text-cgc-slate hover:text-cgc-ink' : 'text-white/80 hover:text-white'
-                }`}
+                className="text-sm font-medium transition-colors relative group text-cgc-slate hover:text-cgc-ink"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-cgc-red group-hover:w-full transition-all duration-300" />
@@ -111,9 +109,7 @@ export default function Navbar() {
             <button
               onClick={() => setSearchOpen(true)}
               aria-label="Search products"
-              className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors ${
-                scrolled ? 'text-cgc-slate hover:text-cgc-ink hover:bg-cgc-bone' : 'text-white/80 hover:text-white'
-              }`}
+              className="w-10 h-10 flex items-center justify-center rounded-full transition-colors text-cgc-slate hover:text-cgc-ink hover:bg-cgc-bone"
             >
               <Search size={18} />
             </button>
@@ -123,9 +119,7 @@ export default function Navbar() {
               <button
                 onClick={() => user ? setUserMenuOpen(!userMenuOpen) : undefined}
                 aria-label="Account"
-                className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors ${
-                  scrolled ? 'text-cgc-slate hover:text-cgc-ink hover:bg-cgc-bone' : 'text-white/80 hover:text-white'
-                }`}
+                className="w-10 h-10 flex items-center justify-center rounded-full transition-colors text-cgc-slate hover:text-cgc-ink hover:bg-cgc-bone"
               >
                 {user ? (
                   <Link href="/account"><User size={18} /></Link>
@@ -166,9 +160,7 @@ export default function Navbar() {
             <button
               onClick={openCart}
               aria-label={`Shopping bag, ${count} items`}
-              className={`w-10 h-10 flex items-center justify-center rounded-full relative transition-colors ${
-                scrolled ? 'text-cgc-slate hover:text-cgc-ink hover:bg-cgc-bone' : 'text-white/80 hover:text-white'
-              }`}
+              className="w-10 h-10 flex items-center justify-center rounded-full relative transition-colors text-cgc-slate hover:text-cgc-ink hover:bg-cgc-bone"
             >
               <ShoppingBag size={18} />
               <AnimatePresence>
@@ -191,9 +183,7 @@ export default function Navbar() {
             <button
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
-              className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full transition-colors ${
-                scrolled ? 'text-cgc-slate hover:bg-cgc-bone' : 'text-white/80 hover:text-white'
-              }`}
+              className="lg:hidden w-10 h-10 flex items-center justify-center rounded-full transition-colors text-cgc-slate hover:text-cgc-ink hover:bg-cgc-bone"
             >
               <Menu size={20} />
             </button>
