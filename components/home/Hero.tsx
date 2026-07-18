@@ -9,16 +9,16 @@ export default function Hero() {
         <div
           className="absolute inset-0 ken-burns opacity-60"
           style={{
-            backgroundImage: 'radial-gradient(circle at center, #2a0808 0%, #000000 100%)',
+            backgroundImage: 'radial-gradient(circle at center, #3a0a0a 0%, #000000 100%)',
           }}
         />
         {/* Attractive Glowing Gradient Orbs */}
-        <div className="absolute top-[-20%] right-[-10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full bg-cgc-red/30 blur-[100px] pointer-events-none mix-blend-screen" />
-        <div className="absolute bottom-[-20%] left-[-10%] w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] rounded-full bg-rose-900/30 blur-[120px] pointer-events-none mix-blend-screen" />
-        <div className="absolute top-[20%] left-[20%] w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-orange-600/10 blur-[100px] pointer-events-none mix-blend-screen" />
+        <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full bg-cgc-red/40 blur-3xl pointer-events-none mix-blend-screen" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] md:w-[800px] md:h-[800px] rounded-full bg-rose-700/30 blur-3xl pointer-events-none mix-blend-screen" />
+        <div className="absolute top-[20%] left-[10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full bg-orange-500/20 blur-3xl pointer-events-none mix-blend-screen" />
         
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
       </div>
 
       {/* Content */}
